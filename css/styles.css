@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+*
+{
+    font-family: 'Goudy Bookletter 1911', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+body div header h1
+{
+    text-align: center;
+    padding: 20px;
+}
+
+div nav
+{
+    position: fixed;
+    padding: 20px;
+}
+div nav ul
+{
+    display: inline-flex; /*poniendo hosizontal el menu, por defecto las listas son verticales*/
+    list-style: none; /*eliminando los puntos de las listas del menu*/
+    width: 100%; /*centrando el menu*/
+    justify-content: space-around; /*centrando el menu*/
+}
+div nav ul li a
+{
+    text-decoration: none; /*eliminando el subrayado de los links del menu*/
+    padding: 10px;
+
+}
+div nav ul li a:hover /*efectos al pasar el cursor por el menu*/
+{
+    color: #fff;
+    border-radius: 10%;
+    background-color: #00ffa0;
+}
+
+.container-home
+{
+    background-color: #a000ff;
+    display: flex;
+    flex-direction: row; /*tambien puede ser column*/
+    flex-wrap: wrap; /*para que los .item no se salgan del contenedor y pasen debajo cuando no haya espacio*/
+    /* align-items: center; */
+    justify-content: center; /*centrar los divs hijos*/
+    height: 500px;
+}
+.item
+{
+    /* background-color: #00ffa0; */
+    height: 600px;
+    width: 40%;
+    padding: 2em;
+    margin: 1em;
+}
+.subtitulo
+{
+    color: #fff;
+    padding: 50px 0px 0px 0px;
+}
+.parrafo 
+{
+    color: black;
+    padding: 20px 0px 0px 0px;
+    height: 200px;
+}
+.img-home
+{
+    width: 65%;
+    padding: 0px 0px 0px 50px;
+}
+
+.container-books
+{
+    background-color: #ffff00;
+    display: flex;
+    flex-direction: row; /*tambien puede ser column*/
+    flex-wrap: wrap; /*para que los .item no se salgan del contenedor y pasen debajo cuando no haya espacio*/
+    /* align-items: center; */
+    justify-content: center; /*centrar los divs hijos*/
+}
+.img-books
+{
+    padding: 10px 100px 10px 100px;
+    width: 250px;
+    height: 300px;
+    border-radius: 23%;
+}
+
+.container-contact
+{
+    background-color: #a000ff;
+    display: flex;
+    flex-direction: row; /*tambien puede ser column*/
+    flex-wrap: wrap; /*para que los .item no se salgan del contenedor y pasen debajo cuando no haya espacio*/
+    /* align-items: center; */
+    justify-content: center; /*centrar los divs hijos*/
+    font-family: 'Montserrat', sans-serif;
+}
+.formulario
+{
+    display: flex;
+    flex-direction: column;
+    margin: 0.5em;
+    padding: 0.5em;
+    color: black;
+    border-radius: 5%;
+}
+#btn-frm
+{
+    color: black;
+    margin: 0.5em;
+    width: 170px;
+    height: 70px;
+    border-radius: 5%;
+}
+
+.container-footer
+{
+    background-color: #ffff00;
+    display: flex;
+    flex-direction: row; /*tambien puede ser column*/
+    flex-wrap: wrap; /*para que los .item no se salgan del contenedor y pasen debajo cuando no haya espacio*/
+    /* align-items: center; */
+    justify-content: center; /*centrar los divs hijos*/
+    text-align: center;
+}
